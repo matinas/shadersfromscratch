@@ -27,6 +27,6 @@ Material:
         m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Bump: 3.48
-    - _Intensity: 1.23
+    - _Bump: 1.28
+    - _Intensity: 2.55
     m_Colors: []

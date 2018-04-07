@@ -1,5 +1,10 @@
 ﻿Shader "SFS/SkyboxReflection" {
 	
+	// Shades the object with a given diffuse texture plus a given cube map to set
+	// the emission based on the reflection vector for each pixel, generating a
+	// reflection effect. If the geometry is flat shaded it should behave as a perfect
+	// mirror (no interpolation of the reflection vector before sampling the cube map)
+
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
 		_Range ("Range Value", Range(0,5)) = 1
