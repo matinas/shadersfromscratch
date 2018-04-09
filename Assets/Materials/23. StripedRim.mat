@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 18. DotProductAlbedo
-  m_Shader: {fileID: 4800000, guid: 7ae40794a7fabf74d80c153527a6f82d, type: 3}
+  m_Name: 23. StripedRim
+  m_Shader: {fileID: 4800000, guid: 35ab2ee1b7f7afe449127f18e057f15f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,5 +19,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _Disp: 0.08
-    m_Colors: []
+    - _RimIntensity: 3.2
+    - _RimPower: 1.9
+    - _RimThreshold: 0.59
+    - _Threshold: 0.43
+    m_Colors:
+    - _Color1: {r: 0.5, g: 0.44482762, b: 0, a: 1}
+    - _Color2: {r: 0.5, g: 0, b: 0, a: 1}

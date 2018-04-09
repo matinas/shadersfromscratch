@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 18. DotProductAlbedo
-  m_Shader: {fileID: 4800000, guid: 7ae40794a7fabf74d80c153527a6f82d, type: 3}
+  m_Name: 21. RimBands
+  m_Shader: {fileID: 4800000, guid: 21c0a406fed20d945b88f6ca5bb7b92c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,5 +19,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _Disp: 0.08
-    m_Colors: []
+    - _RimIntensity: 1.5
+    - _RimPower: 1
+    - _RimThreshold1: 0.67
+    - _RimThreshold2: 0.48
+    m_Colors:
+    - _RimColor1: {r: 0.5, g: 0, b: 0, a: 1}
+    - _RimColor2: {r: 0, g: 0.5, b: 0, a: 1}

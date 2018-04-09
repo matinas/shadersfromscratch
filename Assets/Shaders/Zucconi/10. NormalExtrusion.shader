@@ -1,4 +1,4 @@
-﻿Shader "SFS/NormalExtrusion" {
+﻿Shader "Example/NormalExtrusion" {
 	
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}

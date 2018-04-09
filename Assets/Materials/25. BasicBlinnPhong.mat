@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 25. BasicBlinnPhong
+  m_Shader: {fileID: 4800000, guid: 512c864a4473c3f4b9173ec2e1b97756, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 58c290f97c96a4d49a75dac13d15e76f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininness: 0.57
+    - _Spec: 0.19
+    - _SpecularIntensity: 0.15
+    m_Colors:
+    - _DiffuseColor: {r: 0.014705896, g: 0.014705896, b: 0.014705896, a: 1}
+    - _SpecColor: {r: 1, g: 0.9724139, b: 0, a: 1}
+    - _SpecularColor: {r: 0.11249258, g: 0.4705882, b: 0.044982683, a: 1}
