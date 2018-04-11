@@ -1,6 +1,6 @@
 ﻿Shader "SFS/HardRim" {
 	
-	// Creates a Rim effect highlighting just the borders of the geomtry with
+	// Creates a Rim effect highlighting just the borders of the geometry with
 	// the given color and intensity parameters, considering also a threshold
 	// used to control the start of the Rim area
 

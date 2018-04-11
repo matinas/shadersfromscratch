@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 35. LightingSimpleBlinnPhongAnim
+  m_Shader: {fileID: 4800000, guid: c730fb839333b3d4b85df9eabb0ffaac, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininness: 74
+    - _Specular: 0.54
+    m_Colors:
+    - _DiffuseColor: {r: 0.25335208, g: 0.4852941, b: 0.30293965, a: 1}
+    - _SpecColor: {r: 0.6397059, g: 0.2116674, b: 0.2116674, a: 1}
