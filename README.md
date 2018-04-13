@@ -1,2 +1,2 @@
 # shadersfromscratch
-Experimenting with shaders as part of a Unity Shaders course
+Experimenting with Surface Shaders as part of a couple of tutorials and courses
