@@ -19,14 +19,14 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTex:
-        m_Texture: {fileID: 2800000, guid: 34dbaefb470732b488eb8615bdea120f, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: adcfff7a9b4566e4ca1082b5a7814b4c, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 5ba28fc5b45782949aa3bdadafb11fac, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 23cb2dae8d1128e4da4d48595ff559d7, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Bump: 1.28
-    - _Intensity: 2.55
+    - _Bump: 2.9
+    - _Intensity: 2.2
     m_Colors: []

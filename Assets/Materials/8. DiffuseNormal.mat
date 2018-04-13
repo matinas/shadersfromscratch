@@ -20,13 +20,13 @@ Material:
     m_TexEnvs:
     - _AlbedoTex:
         m_Texture: {fileID: 2800000, guid: adcfff7a9b4566e4ca1082b5a7814b4c, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
         m_Texture: {fileID: 2800000, guid: 23cb2dae8d1128e4da4d48595ff559d7, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Bump: 5.33
+    - _Bump: 3.5
     - _Intensity: 1
     m_Colors: []
