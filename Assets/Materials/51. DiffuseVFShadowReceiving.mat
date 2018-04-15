@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 46. SimpleVF_UVDisplacement
-  m_Shader: {fileID: 4800000, guid: 7333822db5a7351488a7e55ef207fa48, type: 3}
-  m_ShaderKeywords: 
+  m_Name: 51. DiffuseVFShadowReceiving
+  m_Shader: {fileID: 4800000, guid: 41708329de95571479cef162965c90b8, type: 3}
+  m_ShaderKeywords: _CHANGESHADOWCOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,16 +19,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 063c408f9cf323b4b857538a276fbaa5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 58c290f97c96a4d49a75dac13d15e76f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _XOffset: 1
-    - _XOffsetToggl: 0
-    - _XUVScale: 1
-    - _XUVScaleToggl: 0
-    - _YOffset: 1
-    - _YOffsetToggl: 0
-    - _YUVScale: 1
-    - _YUVScaleToggl: 0
-    m_Colors: []
+    - _ChangeShadowColor: 1
+    m_Colors:
+    - _ShadowColor: {r: 1, g: 0, b: 0, a: 1}

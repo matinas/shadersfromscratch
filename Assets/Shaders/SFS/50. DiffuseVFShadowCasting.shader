@@ -1,6 +1,7 @@
-﻿Shader "SFS/DiffuseVF" {
+﻿Shader "SFS/DiffuseVFShadowCasting" {
 	
 	// Shades the geometry using a simple diffuse Lambert lighting model
+	// including casting shadows to other objects
 
 	Properties
 	{
@@ -62,7 +63,45 @@
 
 			ENDCG
 		}
-	}
 
-	FallBack "Diffuse"
+		Pass
+		{
+			Tags { "LightMode" = "ShadowCaster" }
+
+			CGPROGRAM
+
+				#pragma vertex vert
+				#pragma fragment frag
+				#pragma multi_compile_shadowcaster
+
+				#include "UnityCG.cginc"
+
+				struct app_data
+				{
+					float4 vertex : POSITION;
+					float3 normal : NORMAL;
+					float4 uv : TEXCOORD0;
+				};
+
+				struct v2f
+				{
+					V2F_SHADOW_CASTER;
+				};
+
+				v2f vert(app_data v)
+				{
+					v2f o;
+					TRANSFER_SHADOW_CASTER_NORMALOFFSET(o);
+
+					return o;
+				}
+
+				fixed4 frag(v2f i) : SV_TARGET
+				{
+					SHADOW_CASTER_FRAGMENT(i);
+				}
+
+			ENDCG
+		}
+	}
 }

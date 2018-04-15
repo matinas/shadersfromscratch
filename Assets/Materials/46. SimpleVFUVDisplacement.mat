@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 46. SimpleVFUVDisplacement
+  m_Shader: {fileID: 4800000, guid: 7333822db5a7351488a7e55ef207fa48, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 063c408f9cf323b4b857538a276fbaa5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _XOffset: 1
+    - _XOffsetToggl: 0
+    - _XUVScale: 1
+    - _XUVScaleToggl: 0
+    - _YOffset: 1
+    - _YOffsetToggl: 0
+    - _YUVScale: 1
+    - _YUVScaleToggl: 0
+    m_Colors: []

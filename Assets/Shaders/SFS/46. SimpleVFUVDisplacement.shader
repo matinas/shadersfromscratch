@@ -1,4 +1,4 @@
-﻿Shader "SFS/SimpleVF_UVDisplacement" {
+﻿Shader "SFS/SimpleVFUVDisplacement" {
 	
 	// A simple vertex shader that colors the geometry based on a texture which is offseted using the Sin function
 	// It's useful to refer to this graphs in order to verify the result as the Offset parameters varies: https://www.desmos.com/calculator/nqfu5lxaij
@@ -64,6 +64,4 @@
 			ENDCG
 		}
 	}
-
-	FallBack "Diffuse"
 }
