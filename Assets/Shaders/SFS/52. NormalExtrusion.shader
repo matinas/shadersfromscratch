@@ -1,14 +1,14 @@
-﻿Shader "Example/NormalExtrusion" {
+﻿Shader "SFS/NormalExtrusion" {
 	
+	// Extrudes the vertices based on the extrude amount parameter
+
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}
-		_Amount ("Extrusion Amount", Range(-0.01,0.01)) = 0
+		_Amount ("Extrusion Amount", Range(-0.1,0.1)) = 0
 	}
 	
 	SubShader {
 		
-		Tags { "RenderType" = "Opaque" }
-
 		CGPROGRAM
 		
 		#pragma surface surf Lambert vertex:vert

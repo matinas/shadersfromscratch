@@ -53,7 +53,7 @@ Shader "SFS/LightingToon" {
 		}
 
     	ENDCG
- }
+	}
 
- FallBack "Diffuse"
+	FallBack "Diffuse"
 }
