@@ -1,14 +1,20 @@
-﻿Shader "SFS/Waves" {
+﻿Shader "SFS/ScrollingWaves" {
 	
 	// Alters the geometry so to make it wobble given the oscilation frequency, amplitude and speed
 	// It does wobble the geometry in X and Z directions following sin and cos functions respectively
+	// It also scrolls the texture applied over the surface based on some scroll input parameters, and
+	// includes an additional texture (for example, to represent foam over the water) which also scrolls
+	// at a different pace
 
 	Properties
 	{
 		_MainTex ("Main Texture", 2D) = "white" {}
+		_FoamTex ("Foam Texture", 2D) = "white" {}
 		_Freq ("Frequency", Range(0,3)) = 0.5
 		_Amp ("Amplitude", Range(0,1)) = 0.1
 		_Speed ("Speed", Range(0,5)) = 10
+		_ScrollX ("Scroll X", Range(-2,2)) = 1
+		_ScrollY ("Scroll Y", Range(-2,2)) = 2
 	}
 
 	SubShader {
@@ -21,8 +27,8 @@
 
 		#include "UnityCG.cginc"
 
-		sampler2D _MainTex;
-		float _Amp, _Freq, _Speed;
+		sampler2D _MainTex, _FoamTex;
+		float _Amp, _Freq, _Speed, _ScrollX, _ScrollY;
 
 		struct appdata
 		{
@@ -47,14 +53,19 @@
 			float waveHeightZ = cos(t + v.vertex.z * _Freq) * _Amp + cos(t*2 + v.vertex.z * _Freq*2) * _Amp;
 
 			v.vertex.y += waveHeight + waveHeightZ;
-			v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z + waveHeightZ)); // Update normal so to get proper Lighting. Check explanation about how to get this at the end
+			v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z + waveHeightZ)); // Update normal so to get proper Lighting. Check exaplnation how to get this at the end
 			
 			v.color = waveHeight*waveHeightZ + 1; // Should return a value in range [0,1] so when the wave is very low (waveHeight=-1) it's darker and when it's high it's brighter
 		}
 
 		void surf(Input IN, inout SurfaceOutput o)
 		{
-			o.Albedo.rgb = tex2D(_MainTex, IN.uv_MainTex).rgb * IN.vertColor.rgb;
+			float2 scrollUV = float2(_Time.x*_ScrollX, _Time.x*_ScrollY);
+
+			fixed3 mainTex = tex2D(_MainTex, IN.uv_MainTex + scrollUV).rgb;
+			fixed3 foamTex = tex2D(_FoamTex, IN.uv_MainTex + scrollUV*1.25).rgb; 	// Set the foam scroll speed a bit higher than the water scroll speed
+
+			o.Albedo.rgb = (mainTex + foamTex*0.5) * IN.vertColor.rgb; 				// Set the foam intensity a bit smaller so it doesn't get too white
 		}
 
 		ENDCG
@@ -62,10 +73,3 @@
 
 	Fallback "Diffuse"
 }
-
-// NOTE: calculation below assumes we only alter Y with waveHeigth, not waveHeight+waveHeightZ. It must be adaptad for that case, but it should be pretty similar...
-// How to calculate new normal? After modifying the vertex (increasing Y) we have a plane which includes the points V_p+1, V_p (modified vertex) and V_pz
-// where: V_p+1=(p+1,0,0), V_p=(p,h,0) and V_pz=(p,h,1) where h is the waveHeigth or the amount we added to Y coord. So we can find the new normal calculating
-// the normal to this plane, which can be calculated with the cross product V1xV2 where V1=V_p+1-V_p and V2=V_pz-V_p, the two vector formed by the three points
-// from V_p. Doing the math we have that V1=(1,-h,0) and V2=(0,0,-1), so using the algebraic formula for the cross product we have that V1xV2=(h,1,0). The old
-// normal was n=(0,1,0) so the new normal V1xV2=(h,1,0)=n+(h,0,0). And that's the same as adding the waveHeight to the X coordinate of the current normal as in the code

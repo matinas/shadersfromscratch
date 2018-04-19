@@ -68,7 +68,7 @@
 				float2 offset = normal.xy * _UVScale; 
 				i.uvgrab.xy += offset * i.uvgrab.z;
 
-				fixed4 color = tex2Dproj(_GrabTexture, i.uvgrab); // Check here: http://developer.download.nvidia.com/cg/tex2Dproj.html
+				fixed4 color = tex2Dproj(_GrabTexture, i.uvgrab); // Check tex2Dproj() here: http://developer.download.nvidia.com/cg/tex2Dproj.html
 				color *= tex2D(_MainTex, i.uv);
 
 				return color;
