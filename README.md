@@ -15,7 +15,9 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**4. Skybox Reflection Albedo:** Shades the object with a given diffuse texture plus a given cube map to set the emission based on the reflection vector for each pixel, generating a reflection effect. If the geometry is flat shaded it should behave as a perfect mirror (no interpolation of the reflection vector before sampling the cube map). In contrast with previous shader it also accepts a color to compose with the reflective one.
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="512" heigth="512">
+   <img src="https://user-images.githubusercontent.com/5633645/39080454-4ec1a8ea-4505-11e8-8dde-41e7f737a136.gif" alt="4. Skybox Reflection Albedo" style="max-width:100%" width="512" heigth="512">
+   
+   <img src="https://user-images.githubusercontent.com/5633645/39080482-dcca4b56-4505-11e8-9ab5-81f847a054a3.gif" alt="4. Skybox Reflection Albedo (flat)" style="max-width:100%" width="512" heigth="512">
 
 * <span></span>**5. Full Green:** Takes a texture to use as the albedo colour and just turns up the green channel to full
 
@@ -51,7 +53,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**16. Skybox Reflection Bump:** This shader is a combination of 4 and 9, so it includes reflection based on a cubemap as well as bump mapping based on a given normal map and a few parameters settings (intensity of bump, bump amount, etc)
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="512" heigth="512">
+   <img src="https://user-images.githubusercontent.com/5633645/39080483-e79e9f5a-4505-11e8-8ff5-dcdea640bfdc.gif" alt="16. Skybox Reflection Bump" style="max-width:100%" width="512" heigth="512">
 
 * <span></span>**17. Metallic Reflective Bump:** Shades the geometry with a metallic reflective bump mapped material. Takes a normal map and a cube map. The normal map is unwrapped onto the surface normals and multiplied by a fixed factor. The cube map is used to set the Albedo.
 
@@ -67,7 +69,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**20. Hard Rim:** Creates a Rim effect highlighting just the borders of the geometry with the given color and intensity parameters, considering also a threshold used to control the start of the Rim area
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="512" heigth="512">
+   <img src="https://user-images.githubusercontent.com/5633645/39080416-7778dca0-4504-11e8-945a-c3b28fed17e8.gif" alt="20. Hard Rim" style="max-width:100%" width="512" heigth="512">
 
 * <span></span>**21. Rim Bands:** Creates a Rim effect highlighting just the borders of the geomtry with the given colors and intensity parameters. The color thresholds allow to configure the size of the color bands
 
