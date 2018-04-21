@@ -72,16 +72,16 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Range: 1
-    - _RimIntensity: 4
-    - _RimPower: 5.33
-    - _RimThreshold: 0.18
+    - _RimIntensity: 4.4
+    - _RimPower: 5.6
+    - _RimThreshold: 0.66
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _StripeCount: 1
-    - _StripeCountCoef: 6.3
+    - _StripeCountCoef: 17.5
     - _StripeWidth: 1
-    - _Threshold: 0.46
+    - _Threshold: 0.55
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

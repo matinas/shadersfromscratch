@@ -1,8 +1,10 @@
 ﻿Shader "SFS/SkyboxReflectionAlbedo" {
 	
-	// Challenge 1: Modify the shader from the previous lecture to use the _myColor,
-	// _myRange and _myTex property to add colour to the albedo. Hint: add _myColor
-	// to the existing albedo calculation
+	// Shades the object with a given diffuse texture plus a given cube map to set
+	// the emission based on the reflection vector for each pixel, generating a
+	// reflection effect. If the geometry is flat shaded it should behave as a perfect
+	// mirror (no interpolation of the reflection vector before sampling the cube map)
+	// In contrast with previous shader it also accepts a color to compose with the reflective one
 
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)

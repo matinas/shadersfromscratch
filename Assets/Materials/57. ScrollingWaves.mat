@@ -18,12 +18,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: 835c5180d0d0ce740ab9f7264343a24c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e2d0bbb2f188acc43a3ed4a8fb51b0a1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amp: 0.1
-    - _Freq: 0.5
-    - _Speed: 10
+    - _Amp: 0.09
+    - _Freq: 0.64
+    - _ScrollX: 2
+    - _ScrollY: 2
+    - _Speed: 1.31
     m_Colors: []

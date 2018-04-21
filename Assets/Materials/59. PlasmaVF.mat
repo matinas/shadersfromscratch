@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 23. StripedRim
-  m_Shader: {fileID: 4800000, guid: 35ab2ee1b7f7afe449127f18e057f15f, type: 3}
+  m_Name: 59. PlasmaVF
+  m_Shader: {fileID: 4800000, guid: 0cb2a9feaec2d304fbf8126d2ff3c8b9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _RimIntensity: 3.3
-    - _RimPower: 2
-    - _RimThreshold: 0.41
-    - _Threshold: 0.52
+    - _Scale1: 1.16
+    - _Scale2: 1.8
+    - _Scale3: 1.4
+    - _Scale4: 1.4
+    - _Speed: 0.64
     m_Colors:
-    - _Color1: {r: 0.5, g: 0.44482762, b: 0, a: 1}
-    - _Color2: {r: 0.5, g: 0, b: 0, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}

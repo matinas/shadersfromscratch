@@ -27,9 +27,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Snow: 0.41
-    - _SnowDepth: 0
+    - _Snow: 0.22
+    - _SnowDepth: 0.0057
     m_Colors:
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SnowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SnowDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _SnowColor: {r: 0.61310554, g: 0.7866275, b: 0.7941176, a: 1}
+    - _SnowDirection: {r: 0.22, g: 0.76, b: 0, a: 0}

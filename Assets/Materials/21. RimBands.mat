@@ -21,8 +21,8 @@ Material:
     m_Floats:
     - _RimIntensity: 1.5
     - _RimPower: 1
-    - _RimThreshold1: 0.67
-    - _RimThreshold2: 0.48
+    - _RimThreshold1: 0.42
+    - _RimThreshold2: 0.23
     m_Colors:
-    - _RimColor1: {r: 0.5, g: 0, b: 0, a: 1}
-    - _RimColor2: {r: 0, g: 0.5, b: 0, a: 1}
+    - _RimColor1: {r: 0.5, g: 0.42413795, b: 0, a: 1}
+    - _RimColor2: {r: 0.66176474, g: 0.15084343, b: 0.15084343, a: 1}

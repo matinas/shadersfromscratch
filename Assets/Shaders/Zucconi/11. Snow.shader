@@ -2,6 +2,10 @@
 
 Shader "Example/SnowShader" {
 
+	// Shades the geometry with a given texture and color adding an effect so part
+	// of the geometry gets whitened as it was snow. The direction, color and amount
+	// of snow is configurable through a couple of input parameters
+
 	Properties {
 		_MainColor ("Main Color", Color) = (1.0,1.0,1.0,1.0)
 		_MainTex ("Base (RGB)", 2D) = "white" {}

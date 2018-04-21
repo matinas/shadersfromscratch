@@ -1,7 +1,8 @@
 ﻿Shader "SFS/DiffuseNormalIntensity" {
 	
-	// Challenge: Add another slider to the code developed in the previous
-	// lecture to turn the brightness over the entire model up and down
+	// Shades the geometry with a given albedo texture and a normal map,
+	// which bumpinness is driven by another parameter. It also includes an
+	// additional parameter to turn the brightness over the geometry up and down
 
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}

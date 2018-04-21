@@ -2,7 +2,7 @@
 	
 	// Shades the geometry based on the angle between the normals and the view
 	// direction (used to set the color's red channel). It uses a color
-	// displacement parameter to allow inverting the shading
+	// displacement parameter to allowing to invert the shading
 
 	Properties
 	{

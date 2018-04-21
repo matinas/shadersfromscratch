@@ -1,7 +1,6 @@
 ﻿Shader "SFS/FullGreen" {
 	
-	// Challenge 2: create a shader that takes a texture to use as the albedo colour,
-	// but no matter what always turns up the green channel to full.
+	// Takes a texture to use as the albedo colour and just turns up the green channel to full
 
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)

@@ -1,6 +1,5 @@
 ﻿Shader "Holistic/NormalVisualizer"
 {
-
 	// Shades the geometry with the normal vector used as a color, modified
 	// to control the amount of bump (X and Y coords) and the intensity/length (Z coord)
 

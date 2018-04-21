@@ -1,9 +1,6 @@
 ﻿Shader "SFS/EmissionAlbedoTexture" {
 	
-	// Challenge: 1. Write a shader that has two properties; one for a diffuse texture and one for a emissive texture.
-	// 2. Use the attached images to test with Zombunny. There is one for diffuse and one for emissive. 3. Apply the
-	// diffuse to the model's albedo and the emissive to the emission. What do you notice happens to the visual result
-	// when only a diffuse texture is given and no emissive one? How do you think this is correct? 
+	// Shades the geometry with a given albedo texture as well as an emmision texture
 
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}

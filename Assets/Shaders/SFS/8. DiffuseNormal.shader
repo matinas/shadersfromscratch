@@ -1,5 +1,8 @@
 ﻿Shader "SFS/DiffuseNormal" {
 	
+	// Shades the geometry with a given albedo texture and a normal map,
+	// which bumpinness is driven by another parameter
+
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}
 		_NormalTex ("Normal Map", 2D) = "bump" {}

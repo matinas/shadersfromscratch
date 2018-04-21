@@ -1,5 +1,7 @@
 ﻿Shader "SFS/EmissionAlbedo" {
 	
+	// Very simple shader that shades the geometry based on the albedo and emission colors given as parameter
+
 	Properties {
 		_Albedo ("Albedo Color", Color) = (1,1,1,1)
 		_Emission ("Emission Color", Color) = (1,1,1,1)

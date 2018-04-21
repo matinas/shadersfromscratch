@@ -1,9 +1,8 @@
 ﻿Shader "SFS/MetallicReflectiveBump" {
 	
-	// Challenge: Create a shader that takes a normal map and a cube map.
-	// The normal map is to be unwrapped onto the surface normals and then
-	// multiplied by 0.3. The cube map should be used to set the Albedo.
-	// This will give a metallic reflective bump mapped surface.
+	// Shades the geometry with a metallic reflective bump mapped material.
+	// Takes a normal map and a cube map. The normal map is unwrapped onto the surface
+	// normals and multiplied by a fixed factor. The cube map is used to set the Albedo.
 
 	Properties {
 		_NormalTex ("Normal Map", 2D) = "bump" {}

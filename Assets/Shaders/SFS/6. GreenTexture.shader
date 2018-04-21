@@ -1,8 +1,6 @@
 ﻿Shader "SFS/GreenTexture" {
 	
-	// Challenge 3: Create a shader that has only one property which is a texture.
-	// This texture should colour the albedo. To this texture, before applying it
-	// to the albedo apply the colour green
+	// Simila to the previous shader but composes the given texture with a gree color
 
 	Properties {
 		_MainTex ("Main Texture (RGB)", 2D) = "white" {}
