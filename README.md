@@ -23,7 +23,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
    <img src="https://user-images.githubusercontent.com/5633645/39080211-81f2393c-4500-11e8-84c1-a497c784b39b.png" alt="5. Full Green" style="max-width:100%" width="512" heigth="512">
 
-* <span></span>**6. Green Texture:** Quite similar to the previous shader but composes the given texture with a gree color
+* <span></span>**6. Green Texture:** Quite similar to the previous shader but composes the given texture with a green color
 
    <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="512" heigth="512">
 
