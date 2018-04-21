@@ -1,5 +1,5 @@
 # shadersfromscratch
-Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and courses. List of all the generated shaders you can find in Assets/Shaders folder, each one including an image/video demoing the effect.
+Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and courses. List of all the generated shaders you can find in Assets/Shaders folder below, each one including an image/video showing the rendered effect.
 
 * <span></span>**1. Emission Albedo:** Very simple shader that shades the geometry based on the albedo and emission colors given as parameter
 
@@ -113,19 +113,19 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**31. Lighting Simple Blinn-Phong:** Shades the geometry with a basic form of a custom Blinn Phong lighting
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080233-84d1ef26-4500-11e8-9bd3-deeca158a5d1.png" alt="31. Lighting Simple Blinn-Phong" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**32. Lighting Toon:** Shades the geometry based on a main texture as well as a toon shading effect driven by the provided ramp map
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080417-779b1acc-4504-11e8-8a86-e80da9ff38a1.gif" alt="32. Lighting Toon" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**33. Lighting Toon Albedo:** Shades the geometry based on a color as well as a toon shading effect driven by the provided ramp map. The toon effect is applied based on both the view and the lights direction (as if two toon effects where applied accumulatively)
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080234-84f680ac-4500-11e8-904e-4abfd5b017e8.png" alt="33. Lighting Toon Albedo" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**34. Lighting Toon Specular:** Shades the geometry by applying a ramp map to the surface albedo based on the normal and viewDir to determine the uvs. It uses a BlinnPhong shading to support specular highlights
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080235-851735b8-4500-11e8-8a0f-c20617e6982b.png" alt="34. Lighting Toon Specular" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**35. Lighting Simple Blinn-Phong Anim:** Shades the geometry with a basic form of a custom Blinn Phong lighting including a simple Sin-based color change over time
 
@@ -133,11 +133,11 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**36. Simple Alpha:** Shades the geometry using the alpha channel of the main texture to drive the transparency
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080236-853846ea-4500-11e8-9ef2-3a33b14ba7bf.png" alt="36. Simple Alpha" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**37. Hard Rim Hologram:** Creates a Rim effect highlighting just the borders of the geometry with the given color and intensity parameters, considering also a threshold used to control the start of the Rim area. The shading is also done so that the geometry gets more transparent at the center and less transparent at the edges achieving a kind of a Hologram effect
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080237-85584d14-4500-11e8-9bb9-724cb321aac0.png" alt="37. Hard Rim Hologram" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**38. Hard Rim Hologram Anim:** Creates a Rim effect highlighting just the borders of the geometry with the given color and intensity parameters, considering also a threshold used to control the start of the Rim area. The shading is also done so that the geometry gets more transparent at the center and less transparent at the edges achieving a kind of a Hologram effect. The hologram effect fades in and out with time
 
@@ -149,7 +149,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**40. Decal:** Shades the geometry using a decal texture. All pixels will be we visible except for black ones
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080238-8578fe56-4500-11e8-8208-9e63346f680c.png" alt="40. Decal" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**41. Billboard:** Shades the geometry with transparency considering it will be used as part of a billboard so it is drawn from both sides (front-face and back-face, no back-face culling)
 
@@ -157,27 +157,18 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**42. Decal Over Tex:** Shades the geometry with a given base texture plus a decal texture drawn right onto the base one
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080239-8599b268-4500-11e8-81de-fe0c762f2633.png" alt="42. Decal Over Tex" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**43.1. X-Ray Scanner:** Writes the geometry to the stencil buffer without considering writing depth and frames buffer This could be used as a see through hole when combine with the proper shader on another object
-
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
-
 * <span></span>**43.2. X-Ray Scanner Frame:** Makes the geometry visible and applies a rim effect only on those areas which are not written on the stencil buffer Combined with the 43.1. shader (put into another object) it allows to make a frame for the scanner
-
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
-
 * <span></span>**43.3. X-Ray Passtrough:** Makes the geometry visible only on those areas which are not written on the stencil buffer. Combined with the 43.1. shader (put into another object) it allows to simulate that the geometry has a see through hole
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080493-20e79a46-4506-11e8-8492-9fcb87834e71.gif" alt="43.1_2_3. X-Ray" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**44.1. Windowed World Viewer:**  Writes the geometry to the stencil buffer given the Ref number, the Comp function to use and the Operation to apply on the buffer. These parameters are passed as an input to the shader so they can be set per-material (they should be set with the values added as a comment in the Stencil section). Note that the shader does not write to the Frame Buffer (ColorMarsk 0), it does only fills the stencil
-
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
-
 * <span></span>**44.2. WindowedWorldObject:** Writes the geometry considering ony what is into the corresponding stencil buffer (given by Ref). The Comp function and the Operation to apply on the buffer are passed as an input to the shader so they can be set per-material (they should be set with the values added as a comment in the Stencil section). Note that the shader does write to the Frame Buffer (no ColorMarsk parameter)
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080507-595aaa6c-4506-11e8-8197-f35e7fb43f52.gif" alt="44.1_2. Windowed World" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**45. Simple VF:** A simple vertex shader that colors the geometry per-pixel based on pixel's X position. The interesting thing to note here is that the color assigned corresponds to the vertex screen coords on the frag
 
@@ -193,43 +184,43 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**48. Screen Grab VF:** Grabs the rendered scene and applies it as a texture to the geometry
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080240-85ba5202-4500-11e8-8589-4cca4b43a1dc.png" alt="48. Screen Grab VF" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**49. Diffuse VF:** Shades the geometry using a simple diffuse Lambert lighting model
 
-<img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+<img src="https://user-images.githubusercontent.com/5633645/39080241-85de2c68-4500-11e8-8d47-8d5529558a3c.png" alt="49. Diffuse VF" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**50. Diffuse VF Shadow Casting:** Shades the geometry using a simple diffuse Lambert lighting model including casting shadows to other objects
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080242-8600c124-4500-11e8-8a32-4b7f1463438e.png" alt="50. Diffuse VF Shadow Casting" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**51. Diffuse VF Shadow Receiving:** Shades the geometry using a simple diffuse Lambert lighting model including casting shadows to other objects and receiving shadows from othe objects. It also provides the option to alter the color of the received shadows
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080243-8621a1e6-4500-11e8-97d9-424dde279c53.png" alt="51. Diffuse VF Shadow Receiving" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**52. Normal Extrusion:** Extrudes the vertices based on the extrude amount parameter
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080244-8642ef5e-4500-11e8-8539-d6b0f27a070b.png" alt="52. Normal Extrusion" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**53. Simple Outline:** Shades the geometry with an outline of the specified color and width. Take into account that this solution, although simple, requires the shader to be set on the Transparency render queue, which might not be desirable
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080245-8662c6e4-4500-11e8-9154-883c5716700c.png" alt="53. Simple Outline" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**54. Advanced Outline:** Shades the geometry with an outline of the specified color and width. In contrast to the previous outline solution it is not required to set it in the Transparent queue so it's more flexible and natural. It also outlines parts of the geometry not outlined by the previous shader
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080246-86840480-4500-11e8-9f42-2bf5bafefac5.png" alt="54. Advanced Outline" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**55. Glass Effect:** Shades the geometry with a glass effect that makes all what's behind it a little blured and distorted
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080247-86a53358-4500-11e8-86ce-235ed1cdde37.png" alt="55. Glass Effect" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**56. Waves:** Alters the geometry so to make it wobble given the oscilation frequency, amplitude and speed. It does wobble the geometry in X and Z directions following sin and cos functions respectively
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080418-7805f310-4504-11e8-8921-4c91b4e22a1a.gif" alt="56. Waves" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**57. ScrollingWaves:** Alters the geometry so to make it wobble given the oscilation frequency, amplitude and speed. It does wobble the geometry in X and Z directions following sin and cos functions respectively. It also scrolls the texture applied over the surface based on some scroll input parameters, and includes an additional texture (for example, to represent foam over the water) which also scrolls at a different pace
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="256" heigth="256">
+   <img src="https://user-images.githubusercontent.com/5633645/39080419-7828f266-4504-11e8-828d-9f386e4b665b.gif" alt="57. ScrollingWaves" style="max-width:100%" width="256" heigth="256">
 
 * <span></span>**58. Plasma:** Shades the geometry with RGB coloured psychodelic circular patterns (akin a plasma effect)
 
