@@ -25,4 +25,4 @@ Material:
     m_Floats:
     - _Metallic: 0.56
     m_Colors:
-    - _DiffuseColor: {r: 0.008109869, g: 0.5514706, b: 0.3715996, a: 1}
+    - _DiffuseColor: {r: 0.66176474, g: 0.66176474, b: 0.66176474, a: 1}

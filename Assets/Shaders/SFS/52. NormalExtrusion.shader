@@ -4,7 +4,7 @@
 
 	Properties {
 		_AlbedoTex ("Albedo Texture", 2D) = "white" {}
-		_Amount ("Extrusion Amount", Range(-0.1,0.1)) = 0
+		_Amount ("Extrusion Amount", Range(-0.2,0.5)) = 0
 	}
 	
 	SubShader {

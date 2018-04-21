@@ -1,6 +1,6 @@
 ﻿Shader "SFS/DiffuseVF" {
 	
-	// Shades the geometry using a simple diffuse Lambert lighting model
+	// Shades the geometry using a simple diffuse Lambert lighting model (as it's a VF shader there are no shadows)
 
 	Properties
 	{

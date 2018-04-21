@@ -2,7 +2,7 @@
 	
 	// Writes the geometry to the stencil buffer given the Ref number, the Comp function to use and the
 	// Operation to apply on the buffer. These parameters are passed as an input to the shader so they
-	// can be set per-material (they should be set with the values added as a comment in the Stencil section)
+	// can be set per-material (they should be set with the values included as comments in the Stencil section)
 	// Note that the shader does not write to the Frame Buffer (ColorMarsk 0), it does only fills the stencil
 
 	Properties

@@ -1,8 +1,8 @@
 ﻿Shader "SFS/WindowedWorldObject" {
 	
-	// Writes the geometry considering ony what is into the corresponding stencil buffer (given by Ref).
+	// Writes the geometry considering only what is into the corresponding stencil buffer (given by Ref).
 	// The Comp function and the Operation to apply on the buffer are passed as an input to the shader
-	// so they can be set per-material (they should be set with the values added as a comment in the Stencil section)
+	// so they can be set per-material (they should be set with the values included as comments in the Stencil section)
 	// Note that the shader does write to the Frame Buffer (no ColorMarsk parameter)
 
 	Properties

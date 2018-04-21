@@ -24,4 +24,4 @@ Material:
     - _RimThreshold: 0.525
     - _Transparency: 0
     m_Colors:
-    - _RimColor: {r: 0, g: 0.5, b: 0.5, a: 1}
+    - _RimColor: {r: 0, g: 0.4379311, b: 0.5, a: 1}

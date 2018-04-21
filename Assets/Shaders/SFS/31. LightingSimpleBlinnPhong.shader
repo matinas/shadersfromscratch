@@ -2,7 +2,7 @@
 
 Shader "SFS/LightingSimpleBlinnPhong" {
 
-	// Shades the geometry with a basic form of a custom Blinn Phong lightinng
+	// Shades the geometry with a basic form of a custom Blinn Phong lighting
 
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}

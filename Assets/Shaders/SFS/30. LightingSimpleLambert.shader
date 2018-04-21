@@ -2,7 +2,7 @@
 
 Shader "SFS/LightingSimpleLambert" {
 
-	// Shades the geometry with a basic form of a custom Lambert lightinng
+	// Shades the geometry with a basic form of a custom Lambert lighting
 
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}

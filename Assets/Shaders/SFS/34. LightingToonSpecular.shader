@@ -3,7 +3,7 @@
 Shader "SFS/RampAlbedo" {
 
 	// Shades the geometry by applying a ramp map to the surface albedo based on the normal
-	// and viewDir to determine the uvs. It uses a BlinnPhong shading to support specular highlights
+	// and the view direction to determine the UVs. It uses a Blinn-Phong shading to support specular highlights
 
 	Properties {
 		_Color ("Base Color", Color) = (1,1,1,1)

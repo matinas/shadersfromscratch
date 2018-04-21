@@ -1,6 +1,6 @@
 ﻿Shader "SFS/SimpleVFUVColouring" {
 	
-	/// A simple vertex shader that colors the geometry based either on a texture or the UV values of the mesh
+	// A simple vertex shader that colors the geometry based either on a texture or the UV values of the mesh
 
 	Properties
 	{

@@ -32,7 +32,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _UScaleValue: 0.42
-    - _UVScale: 2.6
+    - _UVScale: 1.7
     - _UValue: 0.38
     - _VScaleValue: 0.66
     - _VValue: 0.02

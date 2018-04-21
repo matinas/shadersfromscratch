@@ -3,7 +3,7 @@
 Shader "SFS/LightingSimpleBlinnPhong" {
 
 	// Shades the geometry with a basic form of a custom Blinn Phong
-	// lightinng including a simple Sin-based color change over time
+	// lighting including a simple Sin-based color change over time
 
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}

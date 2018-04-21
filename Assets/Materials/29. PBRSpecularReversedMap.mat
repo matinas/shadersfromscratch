@@ -25,5 +25,5 @@ Material:
     m_Floats:
     - _Specular: 1
     m_Colors:
-    - _DiffuseColor: {r: 0.89705884, g: 0.85748273, b: 0.85748273, a: 1}
-    - _SpecColor: {r: 0.69550914, g: 0.8455882, b: 0.41035897, a: 1}
+    - _DiffuseColor: {r: 0.16176468, g: 0.12206178, b: 0.017841691, a: 1}
+    - _SpecColor: {r: 0.8455882, g: 0.653487, b: 0.41035897, a: 1}

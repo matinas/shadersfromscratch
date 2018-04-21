@@ -3,7 +3,7 @@
 Shader "SFS/LightingToon" {
 
 	// Shades the geometry based on a color as well as a toon shading effect driven
-	// by the provided ramp map. The toon effect is applied base on both the view and
+	// by the provided ramp map. The toon effect is applied based on both the view and
 	// the lights direction (as if two toon effects where applied accumulatively)
 
 	Properties {

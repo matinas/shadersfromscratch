@@ -1,6 +1,6 @@
 ﻿Shader "SFS/GreenTexture" {
 	
-	// Simila to the previous shader but composes the given texture with a gree color
+	// Similar to the previous shader but composes the given texture with a green color
 
 	Properties {
 		_MainTex ("Main Texture (RGB)", 2D) = "white" {}

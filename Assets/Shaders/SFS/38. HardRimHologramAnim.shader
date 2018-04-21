@@ -3,7 +3,8 @@
 	// Creates a Rim effect highlighting just the borders of the geometry with the given color and
 	// intensity parameters, considering also a threshold used to control the start of the Rim area.
 	// The shading is also done so that the geometry gets more transparent at the center and less
-	// transparent at the edges achieving a kind of a Hologram effect
+	// transparent at the edges achieving a kind of a Hologram effect. The hologram effect fades in
+	// and out with time
 
 	Properties
 	{

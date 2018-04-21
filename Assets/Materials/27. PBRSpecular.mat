@@ -26,6 +26,6 @@ Material:
     - _Smoothness: 0.82
     - _Specular: 1
     m_Colors:
-    - _DiffuseColor: {r: 0.33823532, g: 0.09201991, b: 0.09201991, a: 1}
-    - _SpecColor: {r: 0.3897059, g: 0.30571756, b: 0.031520337, a: 1}
+    - _DiffuseColor: {r: 0.4852941, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.7794118, g: 0.6168104, b: 0.08596452, a: 1}
     - _SpecularColor: {r: 0.53676474, g: 0.50573474, b: 0.08682958, a: 1}

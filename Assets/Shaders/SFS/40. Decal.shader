@@ -1,6 +1,6 @@
 ﻿Shader "SFS/Decal" {
 	
-	// Shades the geometry using a decal texture. All pixels will be we visible except for black ones
+	// Shades the geometry using a decal texture. All pixels of the decal texture will be we visible except for the black ones
 
 	Properties
 	{
