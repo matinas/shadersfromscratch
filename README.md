@@ -25,8 +25,6 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**6. Green Texture:** quite similar to the previous shader but composes the given texture with a green color
 
-   <img src="https://user-images.githubusercontent.com/5633645/39080208-817b7c34-4500-11e8-8ec5-a52781e1629c.png" alt="1. Emission Albedo" style="max-width:100%" width="512" heigth="512">
-
 * <span></span>**7. Emission Albedo Texture:** shades the geometry with a given albedo texture as well as an emmision texture
 
    <img src="https://user-images.githubusercontent.com/5633645/39080212-821279fe-4500-11e8-8de3-68ba3ba71fea.png" alt="7. Emission Albedo Texture" style="max-width:100%" width="512" heigth="512">
