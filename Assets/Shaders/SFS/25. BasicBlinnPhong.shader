@@ -6,7 +6,7 @@
 	{
 		_MainTex("Main Texture", 2D) = "white" {}
 		_DiffuseColor ("Diffuse Color", Color) = (0,0,0,1)
-		_SpecColor ("Specular Color", Color) = (1,1,1,1) // This one is already defined by Unity in the CGPROGRAM...
+		_SpecColor ("Specular Color", Color) = (1,1,1,1) // IMPORTANT: this one is used by Unity so it's required to define it here but not in the CGPROGRAM!
 		_Spec("Specular Coverage", Range (0,1)) = 0.5
 		_Shininness ("Shininness", Range(0,1)) = 0.5
 	}

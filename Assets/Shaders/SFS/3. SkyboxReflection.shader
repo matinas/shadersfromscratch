@@ -21,8 +21,8 @@
 
 		fixed4 _Color;
 		half _Range;
-		sampler2D _MainTex;
-		samplerCUBE _Cubemap;
+		sampler2D _MainTex;		// When we import a texture to Unity, we are setting up some of the properties that sampler2D will use
+		samplerCUBE _Cubemap;	// The most important is the Filter mode, which determines how colors are interpolated when the texture is sampled
 		float _Float;
 		float4 _Vector;
 
