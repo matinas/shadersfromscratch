@@ -15,6 +15,8 @@ Shader "SFS/SimpleAlpha" {
 
     	Tags { "Queue" = "Transparent" } 
  
+		Cull Back // As it's supposed to be used with 2D geometry (planes, etc) make sure that back faces are culled
+
     	CGPROGRAM
 
     	#pragma surface surf Lambert alpha:fade // Check this for the alpha parameters: https://docs.unity3d.com/Manual/SL-SurfaceShaders.html

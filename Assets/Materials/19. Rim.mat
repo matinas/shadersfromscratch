@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _RimIntensity: 7.4
-    - _RimPower: 5
+    - _RimIntensity: 5.6
+    - _RimPower: 3.2
     m_Colors:
     - _RimColor: {r: 0.98701835, g: 0.058823526, b: 1, a: 1}
