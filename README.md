@@ -209,3 +209,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 * <span></span>**58. Plasma:** shades the geometry with RGB coloured psychodelic circular patterns (akin a plasma effect)
 
 * <span></span>**59. Plasma VF:** shades the geometry with RGB coloured psychodelic circular patterns (akin a plasma effect) using a VF shader
+
+* <span></span>**60. Advanced Hologram:** shades the geometry with a glass effect that makes all what's behind it a little blured and distorted
+
+   <img src="https://user-images.githubusercontent.com/5633645/39101466-73684980-4670-11e8-9396-7b59856caad0.png" alt="60. Advanced Hologram" style="max-width:100%" width="512" heigth="512">
