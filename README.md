@@ -212,4 +212,6 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**60. Advanced Hologram:** quite similar to 37-38 but it also combines the rimmed hologram effect with a base color plus a base texture. Aditionally, it allows to control the transparency level and even the direction of the transparency (in-out or out-in) and allows to configure a kind of scanline animation so to better simulate the hologram effect
 
-   <img src="https://user-images.githubusercontent.com/5633645/39101466-73684980-4670-11e8-9396-7b59856caad0.png" alt="60. Advanced Hologram" style="max-width:100%" width="512" heigth="512">
+   <img src="https://user-images.githubusercontent.com/5633645/39101466-73684980-4670-11e8-9396-7b59856caad0.png" alt="https://user-images.githubusercontent.com/5633645/39142553-68f13a20-4701-11e8-93f0-75eaef91ef55.gif style="max-width:100%" width="512" heigth="512">
+   
+   <img src="https://user-images.githubusercontent.com/5633645/39142553-68f13a20-4701-11e8-93f0-75eaef91ef55.gif" alt="https://user-images.githubusercontent.com/5633645/39142553-68f13a20-4701-11e8-93f0-75eaef91ef55.gif" style="max-width:100%" width="640" heigth="640">
