@@ -194,7 +194,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
    <img src="https://user-images.githubusercontent.com/5633645/39080246-86840480-4500-11e8-9f42-2bf5bafefac5.png" alt="54. Advanced Outline" style="max-width:100%" width="512" heigth="512">
 
-* <span></span>**55. Glass Effect:** shades the geometry with a glass effect that makes all what's behind it a little blured and distorted
+* <span></span>**55. Glass Effect:** shades the geometry with a glass effect that makes all what's behind it a little blurred and distorted
 
    <img src="https://user-images.githubusercontent.com/5633645/39080247-86a53358-4500-11e8-86ce-235ed1cdde37.png" alt="55. Glass Effect" style="max-width:100%" width="512" heigth="512">
 
@@ -210,7 +210,7 @@ Experimenting with Surface Shaders (mainly) as part of a couple of tutorials and
 
 * <span></span>**59. Plasma VF:** shades the geometry with RGB coloured psychodelic circular patterns (akin a plasma effect) using a VF shader
 
-* <span></span>**60. Advanced Hologram:** quite similar to 37-38 but it also combines the rimmed hologram effect with a base color plus a base texture. Aditionally, it allows to control the transparency level and even the direction of the transparency (in-out or out-in) and allows to configure a kind of scanline animation so to better simulate the hologram effect
+* <span></span>**60. Advanced Hologram:** quite similar to 37-38 but it also combines the rimmed hologram effect with a base color plus a base texture. Aditionally, it allows to control the transparency level and even the direction of the transparency (in-out or out-in) and allows to configure a kind of scanline animation so to better simulate the hologram effect as well as simple flickering and wobbling
 
    <img src="https://user-images.githubusercontent.com/5633645/39101466-73684980-4670-11e8-9396-7b59856caad0.png" alt="60. Advanced Hologram" style="max-width:100%" width="512" heigth="512">
    
