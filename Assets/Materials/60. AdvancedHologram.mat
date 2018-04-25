@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 60. MulticolorHologram
+  m_Name: 60. AdvancedHologram
   m_Shader: {fileID: 4800000, guid: f01aa6948335b59499261e300dcb1a79, type: 3}
   m_ShaderKeywords: _INOUTTRANSPARENCY_ON
   m_LightmapFlags: 4
@@ -19,22 +19,28 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 58c290f97c96a4d49a75dac13d15e76f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 038a933fdf7cc914eab90de715ca98d7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _InOutTransparency: 1
-    - _MainColorIntensity: 1.03
-    - _RimIntensity: 1.09
+    - _MainColorIntensity: 0.44
+    - _RimIntensity: 1.33
     - _RimPIntensity: 1.6
-    - _RimPower: 3.95
-    - _RimThreshold: 0.45
-    - _ScanlineAmount: 70
-    - _ScanlineFreq: 10
-    - _ScanlineThreshold: 0.81
+    - _RimPower: 0.76
+    - _RimThreshold: 0.3
+    - _ScanlineAmount: 30
+    - _ScanlineFreq: 12.2
+    - _ScanlineThreshold: 0.05
     - _ScanlineVelocity: 47.8
     - _TransparencyAmount: 0
-    - _TransparencySlider: -0.56
+    - _TransparencySlider: 0
+    - _VibrationAmount: 0.0049
+    - _VibrationFreq: 100
+    - _VibrationSpeed: 14
+    - _WobbleAmount: 0.005
+    - _WobbleFreq: 81
+    - _WobbleSpeed: 33
     m_Colors:
     - _MainColor: {r: 0.7859027, g: 0.4632353, b: 0.9264706, a: 1}
     - _RimColor: {r: 0.053633217, g: 0.8407469, b: 0.9117647, a: 1}

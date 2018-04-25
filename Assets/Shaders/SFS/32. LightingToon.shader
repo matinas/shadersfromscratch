@@ -43,7 +43,10 @@ Shader "SFS/LightingToon" {
 			// NdotL = NdotL*0.5 + 0.5; // If we would want to shift the dot values to [0,1] instead of [-1,1]. The result is similar but not the same because of the way the
 										// value is used in the line below. If the dot is 0 for example, in the first case it will map to 0.5, but in the other it will map to 0
 
-			NdotL = tex2D(_RampTex, fixed2(NdotL, 0.5));	
+			NdotL = tex2D(_RampTex, fixed2(NdotL, 0.5));
+
+			//half NDotL = floor(NdotL * _CelShadingLevels) / (_CelShadingLevels); // Substitute previous line by this in case we want to achieve Toon Shading without a Ramp
+																				   // Map texture. _CelShadingLevels should be a float [0,+inf]. This method is called Snap
 
 			fixed4 color;
 			color.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
