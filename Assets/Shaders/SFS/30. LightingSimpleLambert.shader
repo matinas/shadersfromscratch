@@ -34,6 +34,7 @@ Shader "SFS/LightingSimpleLambert" {
 
 			half4 color;
 			color.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten * 2); // LightColor0 maintains the intensity of all lights affecting the object, not just one
+																		   // Note: multiplication by 2 is not necessary in Unity 5 and up because lights are twice as bright
 			color.a = s.Alpha;
 
 			return color;
