@@ -1,6 +1,6 @@
 ﻿Shader "SFS/GlassEffect" {
 	
-	// Shades the geometry with a glass effect that makes all what's behind it a little blured and distorted
+	// Shades the geometry with a glass effect that makes all what's behind it a little blurred and distorted
 
 	Properties
 	{

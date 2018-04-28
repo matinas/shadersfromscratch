@@ -1,5 +1,8 @@
 ﻿Shader "Example/AnisotropicSpecular" {
 
+	// Shades the geometry with an Anisotropic Specular effect (similar to a specular
+	// effect but in this case the specular area is concentric and seems brushed)
+
 	Properties
 	{
 		_MainTex ("Main Texture", 2D) = "black" {}

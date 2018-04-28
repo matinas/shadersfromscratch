@@ -1,5 +1,8 @@
 ﻿Shader "Example/Terrain" {
 
+	// Blends multiple textures based on a terrain splatmap. Mainly used for shading terrains.
+	// It also allows to project a customizable circle in a given point of the terrain
+
 	Properties
 	{
 		_MainTint ("Diffuse Tint", Color) = (1,1,1,1) 
