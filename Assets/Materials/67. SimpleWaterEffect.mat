@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 55. GlassEffect
-  m_Shader: {fileID: 4800000, guid: dcef5706bfb1beb4384698cdcfdaad86, type: 3}
+  m_Name: 67. SimpleWaterEffect
+  m_Shader: {fileID: 4800000, guid: f4ccd11f8af284342842f8c07f3a16db, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,19 +23,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 42da87f6c999e734e84c474a320ebe6b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 917d590e1a120c04ab933b2c1597b1aa, type: 3}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 68b888b128bc8fe43bdda186a92baec8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _UScaleValue: 0.42
-    - _UVScale: 1.6
-    - _UValue: 0.38
-    - _VScaleValue: 0.66
-    - _VValue: 0.02
-    - _VX: 0
-    - _VY: 0.25
-    m_Colors: []
+    - _Displacement: 0.05
+    - _Freq: 1.76
+    m_Colors:
+    - _Color: {r: 0, g: 0.89411765, b: 0.93333334, a: 1}

@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Example_DisolveEffect
+  m_Name: 66. DisolveEffect
   m_Shader: {fileID: 4800000, guid: 6819189349717b74ba9fe4495b652d35, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -38,6 +38,6 @@ Material:
     - _Bump: 2
     - _BurnIntensity: 3.75
     - _BurnThreshold: 2.71
-    - _ClipRange: 0.11
+    - _ClipRange: 0.18
     - _RampOffset: -0.14
     m_Colors: []

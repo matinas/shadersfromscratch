@@ -65,10 +65,12 @@
 			{
 				half3 normal = UnpackNormal(tex2D(_NormalTex, i.uvnormal));
 				
-				float2 offset = normal.xy * _UVScale; 
-				i.uvgrab.xy += offset * i.uvgrab.z;
+				float2 offset = normal.xy * _UVScale;
+				i.uvgrab.xy += offset * i.uvgrab.z; // The product by z is just so to get less distorsion when we are near the glass plane and more when we are far
+													// But it's not strictly required, we can tweak this with the _UV_Scale parameter above
 
 				fixed4 color = tex2Dproj(_GrabTexture, i.uvgrab); // Check tex2Dproj() here: http://developer.download.nvidia.com/cg/tex2Dproj.html
+																  // May be required to use UNITY_PROJ_COORD(i.uvgrab) here on some platforms
 				color *= tex2D(_MainTex, i.uv);
 
 				return color;
