@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// This scripts allows to implement a grayscale screen effect
+// This scripts allows to visualize the depth of the scene as a screen effect
+// NOTE: it's not working 100% fine...
 
 [ExecuteInEditMode]
-public class RenderImage : MonoBehaviour {
+[RequireComponent (typeof(Camera))]
+public class DepthRenderImage : MonoBehaviour {
 
 	#region Properties
 	public Material material
@@ -26,10 +28,11 @@ public class RenderImage : MonoBehaviour {
 	#region Variables
 	private Material curMaterial;
 	public Shader curShader;
-	public float grayScaleAmount = 1.0f;
+
+	[Range(0.0f,1.0f)]
+	public float depthPower = 1.0f;
 
 	#endregion
-
 
 	// Use this for initialization
 	void Start ()
@@ -44,19 +47,21 @@ public class RenderImage : MonoBehaviour {
 		{
 			enabled = false;
 		}
+
+		Camera.main.depthTextureMode = DepthTextureMode.Depth;
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
-		grayScaleAmount = Mathf.Clamp(grayScaleAmount,0.0f,1.0f);
+		Camera.main.depthTextureMode = DepthTextureMode.Depth;
+		depthPower = Mathf.Clamp(depthPower,0,5);
 	}
 
 	void OnRenderImage(RenderTexture srcTexture, RenderTexture dstTexture)
 	{
 		if (curShader != null)
 		{
-			material.SetFloat("_LuminosityAmount", grayScaleAmount);
+			material.SetFloat("_DepthPower", depthPower);
 			Graphics.Blit(srcTexture,dstTexture,material);
 		}
 		else

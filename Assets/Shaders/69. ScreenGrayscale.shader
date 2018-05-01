@@ -3,7 +3,7 @@
 Shader "Example/ScreenGrayscale" {
 
 	// Applies a grayscale screen effect given the actual Unity Render Texture as an input
-	// This shader must be used together with the RenderImage script aplied on the Camera
+	// This shader must be used together with the GrayscaleRenderImage script applied to the Camera
 
 	Properties
 	{
@@ -17,7 +17,7 @@ Shader "Example/ScreenGrayscale" {
 		{
 			CGPROGRAM
 			
-			#pragma vertex vert_img
+			#pragma vertex vert_img // Use the Unity predefined vertex function which does just the basics (if not we have to include our own basic vert)
 			#pragma fragment frag
 			#pragma fragmentoption ARB_precision_hint_fastest
 
