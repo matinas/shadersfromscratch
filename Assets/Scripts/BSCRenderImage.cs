@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// This scripts allows to visualize the depth of the scene as a screen effect
-// NOTE: it's not working 100% fine...
-
 [ExecuteInEditMode]
 [RequireComponent (typeof(Camera))]
 public class BSCRenderImage : MonoBehaviour {
