@@ -21,7 +21,7 @@
 		struct Input
 		{
 			float2 uv_AlbedoTex;
-			float2 uv_EmissionTex;
+			float2 uv_EmissionTex; // This is not strictly neccessary as we are using the same UV values for both textures...
 		};
 
 		void surf (Input IN, inout SurfaceOutput o)
