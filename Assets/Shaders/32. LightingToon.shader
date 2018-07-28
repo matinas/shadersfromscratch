@@ -18,7 +18,7 @@ Shader "SFS/LightingToon" {
  
     	CGPROGRAM
 
-    	#pragma surface surf Toon // As we redefined the lighting model function the program expects to find a LightingToon function
+    	#pragma surface surf Toon noshadow // As we redefined the lighting model function the program expects to find a LightingToon function
  
     	sampler2D _MainTex;
 		fixed4 _Color;
@@ -31,17 +31,20 @@ Shader "SFS/LightingToon" {
  
     	void surf (Input IN, inout SurfaceOutput o)
     	{
-            o.Albedo = _Color + tex2D(_MainTex, IN.uv_MainTex).rgb;
+            o.Albedo = _Color.rgb + tex2D(_MainTex, IN.uv_MainTex).rgb;
     	}
 
 		sampler2D _RampTex;
 
-		fixed4 LightingToon(SurfaceOutput s, half3 lightDir, half atten) // We won't use the lightDir and atten but the custom lighting function signature must include those anyway
+		fixed4 LightingToon(SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) // We won't use the lightDir and atten but the custom lighting function signature must include those anyway
 		{
-			half NdotL = dot(s.Normal, normalize(lightDir)) + _Offset;
+			half NdotL = dot(s.Normal, normalize(lightDir)) + _Offset; // We could have also used viewDir here instead of lightDir to get a viewer-dependent effect
 
 			// NdotL = NdotL*0.5 + 0.5; // If we would want to shift the dot values to [0,1] instead of [-1,1]. The result is similar but not the same because of the way the
 										// value is used in the line below. If the dot is 0 for example, in the first case it will map to 0.5, but in the other it will map to 0
+										// Anyway, the _Offsset parameter is used to apply an effect on the ramp and get the effect correct
+										// We could have also applied saturate() to the NdotL function and get a similar result that avoid all this...
+										
 
 			NdotL = tex2D(_RampTex, fixed2(NdotL, 0.5));
 

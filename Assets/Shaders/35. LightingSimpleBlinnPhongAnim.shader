@@ -45,6 +45,7 @@ Shader "SFS/LightingSimpleBlinnPhong" {
 
 			half3 diff = s.Albedo * NdotL_dif;
 			half3 spec = s.Specular * _SpecColor * pow(NdotL_spec, _Shininness); // Just a note: Unity uses 48 as the Shininness factor by default
+																				 // Also, we could have used s.Gloss here instead of _Shininness if we would have set it in the surf() function
 
 			half4 color;
 			color.rgb = (diff + spec) * _LightColor0.rgb * atten * _SinTime.z; // LightColor0 maintains the intensity of all lights affecting the object, not just one

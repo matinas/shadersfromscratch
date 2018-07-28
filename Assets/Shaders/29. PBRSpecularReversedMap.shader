@@ -31,7 +31,7 @@
 		{
 			o.Albedo = _DiffuseColor;
 			o.Smoothness = 0.9 - tex2D(_SpecularTexture, IN.uv_SpecularTexture).r; // It's 0.9 here because when Smoothness=1 the PBR lighting makes the
-																				   // material non-reflective (chech it with the Standard Specular shader!)
+																				   // material non-reflective (check it with the Standard Specular shader!)
 			o.Specular = _SpecColor * _Specular;
 		}
 
