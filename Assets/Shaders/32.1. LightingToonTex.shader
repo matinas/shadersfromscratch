@@ -3,7 +3,8 @@
 Shader "SFS/LightingToonTex" {
 
 	// Shades the geometry based on a main texture as well as a toon shading effect driven by the provided ramp map
-	// Similar to the previous one but using a slightly different way of doing the Toon Shading
+	// Similar to the previous one but using a slightly different way of applying the texture so it's more controllable
+	// (the texture is composed with the base color instead of added to it, and the Albedo is not taken into account in the toon shading)
 
 	Properties
 	{

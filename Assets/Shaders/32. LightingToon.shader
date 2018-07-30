@@ -36,7 +36,7 @@ Shader "SFS/LightingToon" {
 
 		sampler2D _RampTex;
 
-		fixed4 LightingToon(SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) // We won't use the lightDir and atten but the custom lighting function signature must include those anyway
+		fixed4 LightingToon(SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) // lightDir and atten must be always include
 		{
 			half NdotL = dot(s.Normal, normalize(lightDir)) + _Offset; // We could have also used viewDir here instead of lightDir to get a viewer-dependent effect
 
