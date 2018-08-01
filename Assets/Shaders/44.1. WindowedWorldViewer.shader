@@ -28,7 +28,7 @@
 			Pass[_SOp]		// replace
 		}
 
-		CGPROGRAM
+		CGPROGRAM 			// All this chunk of code is not strictly necessary in this case...
 
 		#pragma surface surf Standard
 

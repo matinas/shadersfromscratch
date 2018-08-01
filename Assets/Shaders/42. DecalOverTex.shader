@@ -31,7 +31,7 @@
 			fixed4 d = tex2D(_Decal, IN.uv_MainTex);
 
 			o.Albedo = _ShowDecal ? (m * d).rgb : m.rgb;
-			//o.Albedo = d.r > 0.8 ? m.rgb : d.rgb; // In case we want the original color from the decal
+			//o.Albedo = d.r > 0.8 ? m.rgb : d.rgb; // In case we want just the original color from the decal (not blended with the one of the base texture)
 		}
 
 		ENDCG

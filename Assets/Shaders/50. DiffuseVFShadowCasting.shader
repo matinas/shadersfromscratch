@@ -72,7 +72,7 @@
 
 				#pragma vertex vert
 				#pragma fragment frag
-				#pragma multi_compile_shadowcaster
+				#pragma multi_compile_shadowcaster // It Seems that this is not mandatory...
 
 				#include "UnityCG.cginc"
 

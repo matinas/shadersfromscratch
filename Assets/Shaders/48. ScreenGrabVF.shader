@@ -35,7 +35,6 @@
 				float2 uv : TEXCOORD0;
 			};
 
-
 			sampler2D _MainTex, _GrabTexture; // _GrabTexture will maintain the framebuffer image immediately before the GrabPass
 			float4 _MainTex_ST;
 

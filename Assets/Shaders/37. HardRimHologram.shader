@@ -40,7 +40,7 @@
 		{
 			half rim = 1 - saturate(dot(o.Normal,IN.viewDir));
 
-			// o.Albedo = _RimColor; // Uncomment to take ensure all the geometry is at least a bit coloured...
+			// o.Albedo = _RimColor; // Uncomment to ensure all the geometry is at least a bit coloured...
 
 			o.Emission = _RimColor * (rim > _RimThreshold ? pow(rim,_RimPower) : 0) * _RimIntensity;
 			o.Alpha = (1 - _Transparency) * pow(rim,_RimPower);

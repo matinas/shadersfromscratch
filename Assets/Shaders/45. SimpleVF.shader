@@ -47,7 +47,7 @@
 			fixed4 frag(v2f i) : SV_TARGET
 			{
 				fixed4 color;
-				color.r = i.vertex.x/_ScreenOffset;
+				color.r = i.vertex.x/_ScreenOffset; // This is because we are in screen/image space now so coords range from 0 to screen resolution
 
 				return color;
 			}
