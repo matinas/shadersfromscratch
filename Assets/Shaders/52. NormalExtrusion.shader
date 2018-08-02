@@ -11,7 +11,7 @@
 		
 		CGPROGRAM
 		
-		#pragma surface surf Lambert vertex:vert
+		#pragma surface surf Lambert vertex:vert // Add 'addshadow' at the end here if we want to extrude also the projected shadows
 
 		uniform sampler2D _AlbedoTex;
 		uniform half _Amount;
@@ -20,6 +20,14 @@
 		{
 			float2 uv_AlbedoTex;
 		};
+
+		// In case we'd want to define our own appdata structure, just add this and update the input structure on vert()...
+		// struct appdata
+		// {
+		// 	float4 vertex : POSITION;
+		// 	float3 normal : NORMAL;
+		// 	float4 texcoord: TEXCOORD0; // This should be named 'texcoord' in order to be correctly mapped to IN.uv_AlbedoTex
+		// };
 
 		void vert(inout appdata_full v)
 		{

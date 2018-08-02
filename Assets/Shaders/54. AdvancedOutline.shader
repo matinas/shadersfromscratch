@@ -62,6 +62,10 @@
 				float _OutlineWidth;
 				fixed4 _OutlineColor;
 
+				// NOTE: observe that we would not be able to do this with a Surface Shader with vertex access (vertex:vert) as it does not
+				// allow to modify the vertex in a different space than object space. One is not supposed to convert the vertex to clip space there for
+				// example, like it's done inside the vertex shader of a V/F shader (this is all done by the surf function inside a Surface Shader)
+
 				v2f vert(app_data v)
 				{
 					v2f o;
@@ -70,9 +74,11 @@
 
 					//fixed3 n = UnityObjectToWorldNormal(v.normal);
 					fixed3 n = normalize(mul((float3x3) UNITY_MATRIX_IT_MV, v.normal)); // Transform the normal to camera space so to align it with camera view
-					float2 offset = TransformViewToProjection(n.xy); 					// Project the normal into XY plane
+					float2 offset = TransformViewToProjection(n.xy); 					// Project the normal into XY plane, which makes the normals to point just to the sides, not front/back.
+																						// This is what avoids that the Z coord of the outline to be less far than the Z coord of the base geometry
 
-					o.pos.xy += offset * _OutlineWidth;
+					o.pos.xy += offset * _OutlineWidth * o.pos.z; // Multiplication by pos.z is done in order to get the outline width dependant on the distance to the geometry
+																  // So if the camera is far from the object the outline will be more thick and it will be seen without issues
 					o.color = _OutlineColor; 
 
 					return o;
