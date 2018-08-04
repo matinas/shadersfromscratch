@@ -65,7 +65,8 @@
 			fixed3 mainTex = tex2D(_MainTex, IN.uv_MainTex + scrollUV).rgb;
 			fixed3 foamTex = tex2D(_FoamTex, IN.uv_MainTex + scrollUV*1.25).rgb; 	// Set the foam scroll speed a bit higher than the water scroll speed
 
-			o.Albedo.rgb = (mainTex + foamTex*0.5) * IN.vertColor.rgb; 				// Set the foam intensity a bit smaller so it doesn't get too white
+			o.Albedo.rgb = (mainTex + foamTex) * IN.vertColor.rgb; 			// Always that we add color together it's a good idea to average them
+																					// so they don't get too white (that's the reason of the product by 0.5)
 		}
 
 		ENDCG

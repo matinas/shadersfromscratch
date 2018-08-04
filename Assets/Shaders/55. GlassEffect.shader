@@ -67,7 +67,7 @@
 				
 				float2 offset = normal.xy * _UVScale;
 				i.uvgrab.xy += offset * i.uvgrab.z; // The product by z is just so to get less distorsion when we are near the glass plane and more when we are far
-													// But it's not strictly required, we can tweak this with the _UV_Scale parameter above
+													// But it's not strictly required, we can tweak this with the _UVScale parameter above
 
 				fixed4 color = tex2Dproj(_GrabTexture, i.uvgrab); // Check tex2Dproj() here: http://developer.download.nvidia.com/cg/tex2Dproj.html
 																  // May be required to use UNITY_PROJ_COORD(i.uvgrab) here on some platforms
@@ -93,5 +93,8 @@
 //
 // The division by vertex.w it's actually being done by the tex2Dproj() call as part of the fragment shader. What it does is basically a texture sampling
 // much like tex2D but in contrast it also includes a projection before sampling the texture (division by the homogeneous coordinate w) as we want to get that
-// particular screen space pixel color. Unity provides a function for doing this type of texture sampling called ComputeScreenPos(), so we can replace these lines
-// with just o.uvgrab = ComputeScreenPos(o.vertex) and it should still work fine.
+// particular screen space pixel color. In fact, if we do the division by o.vertex.w in the vertex shader like o.uvproj.xy = (float2(o.vertex.x/o.vertex.w, o.vertex.y*_ProjectionParams.x/o.vertex.w) + 1) * 0.5;
+// and use just tex2D() in the fragment shader we get almost the same result (it differs a very little bit for some reason though). Unity provides a function for
+// doing all this kind of texture sampling called ComputeScreenPos(), so we can replace these lines with just o.uvgrab = ComputeScreenPos(o.vertex) and it should still work fine.
+//
+// So, in summary, what that code is doing is basically calculating the screen coords of the vertex an assign them to the uvgrab coords.
