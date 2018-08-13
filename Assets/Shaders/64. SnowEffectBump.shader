@@ -44,6 +44,7 @@ Shader "Example/SnowEffectBump" {
     	{
 			// Convert _SnowDirection from world space to object space (we cannot use WorldNormalVector here)
 			float4 sn = mul(_SnowDirection, unity_WorldToObject);
+			// float4 sn = mul(UNITY_MATRIX_IT_MV, _SnowDirection);
 
 			if (dot(v.normal, sn.xyz) >= _Snow)
 				v.vertex.xyz += (sn.xyz + v.normal) * _SnowDepth * _Snow;
@@ -64,6 +65,7 @@ Shader "Example/SnowEffectBump" {
     	}
 
     	ENDCG
- }
- FallBack "Diffuse"
+	}
+
+	FallBack "Diffuse"
 }

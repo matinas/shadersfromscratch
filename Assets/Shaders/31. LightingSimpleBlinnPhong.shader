@@ -40,10 +40,10 @@ Shader "SFS/LightingSimpleBlinnPhong" {
 			half NdotL_dif = max(0,dot(s.Normal, lightDir));
 
 			half3 halfv = normalize(lightDir + viewDir);
-			half NdotL_spec = max(0,dot(s.Normal, halfv));
+			half NdotH_spec = max(0,dot(s.Normal, halfv));
 
 			half3 diff = s.Albedo * NdotL_dif;
-			half3 spec = s.Specular * _SpecColor * pow(NdotL_spec, _Shininness); // NOTE: Unity uses 48 as the Shininness/falloff factor by default
+			half3 spec = s.Specular * _SpecColor * pow(NdotH_spec, _Shininness); // NOTE: Unity uses 48 as the Shininness/falloff factor by default
 																				 // Also, we could have used s.Gloss here instead of _Shininness if we would have set it in the surf() function
 
 			half4 color;

@@ -17,7 +17,7 @@ Shader "Example/ScreenGrayscale" {
 		{
 			CGPROGRAM
 			
-			#pragma vertex vert_img // Use the Unity predefined vertex function which does just the basics (if not we have to include our own basic vert)
+			#pragma vertex vert_img // Use the Unity predefined vertex function which does just the basics (otherwise we have to include our own basic vert)
 			#pragma fragment frag
 			#pragma fragmentoption ARB_precision_hint_fastest
 
@@ -31,7 +31,7 @@ Shader "Example/ScreenGrayscale" {
 				// Get colors from the render texture and UVs from v2f_img struct
 				fixed4 renderTex = tex2D(_MainTex, i.uv);
 
-				float luminosity = 0.299 * renderTex.r + 0.587 * renderTex.g + 0.114 * renderTex.b; // Setup grayed out version of the actual screen image
+				float luminosity = 0.299 * renderTex.r + 0.587 * renderTex.g + 0.114 * renderTex.b; // Setup grayed out version of the actual screen image (check luminosity value here: https://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color)
 				fixed4 finalColor = lerp(renderTex, luminosity, _LuminosityAmount);					// Interpolate between screen imagen and grayed out version
 
 				return finalColor;

@@ -63,7 +63,7 @@ Shader "Example/AdvancedHologram" {
 			v.vertex.x += vibrationHeight;
 			v.normal = normalize(float3(v.normal.x + vibrationHeight, v.normal.y, v.normal.z + vibrationHeight)); // Update normal so to get proper Lighting
 
-			o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+			o.worldPos = mul(unity_ObjectToWorld, v.vertex); // REMOVE: This is not necessary I guess... it's already calculated when included in Input structure
 		}
 
 		void surf (Input IN, inout SurfaceOutput o)

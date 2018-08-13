@@ -71,7 +71,7 @@ Shader "Example/AdvancedWaterEffect" {
 
 			fixed4 frag(v2f i) : SV_TARGET
 			{
-				float sinT = sin(_Time.w / _Period);
+				float sinT = sin(_Time.w / _Period); // This should be the same as _SinTime.x...
 
 				// This solution do not generate an animated material
 				//float2 distortion = float2(sinT,sinT)-0.5;

@@ -55,7 +55,7 @@ Shader "Example/SimpleWaterEffect" {
 
 				o.vertex = UnityObjectToClipPos(v.vertex);
 
-				o.uvgrab.xy = (float2(o.vertex.x,o.vertex.y*_ProjectionParams.x)+o.vertex.w)*0.5;
+				o.uvgrab.xy = (float2(o.vertex.x,o.vertex.y*_ProjectionParams.x)+o.vertex.w)*0.5; // This is the same that ComputeGrabScreePos function does...
 				o.uvgrab.zw = o.vertex.zw;
 
 				o.uvmain = TRANSFORM_TEX(v.uvmain, _MainTex);

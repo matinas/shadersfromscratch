@@ -19,7 +19,7 @@
 
     	CGPROGRAM
 
-    	#pragma surface surf Lambert vertex:vert nolightmap
+    	#pragma surface surf Lambert vertex:vert nolightmap noshadow
  
 		sampler2D _RampTex, _NoiseTex;
 		float _RampOffset, _Amount, _Freq, _Speed, _NoiseOffset, _ClipRange;
