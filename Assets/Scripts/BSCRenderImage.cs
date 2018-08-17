@@ -53,7 +53,7 @@ public class BSCRenderImage : MonoBehaviour {
 	
 	void Update ()
 	{
-		brightness = Mathf.Clamp(brightness, 0.0f, 2.0f);
+		brightness = Mathf.Clamp(brightness, 0.0f, 2.0f); // FIXME: it's better to use the Range[0,2] tag for each attribute instead of correcting the range here...
 		saturation = Mathf.Clamp(saturation, 0.0f, 2.0f);
 		contrast = Mathf.Clamp(contrast, 0.0f, 2.0f);
 	}

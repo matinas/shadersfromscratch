@@ -26,6 +26,8 @@
 			uniform sampler2D _MainTex, _BlendTex;
 			uniform half _BlendMode, _Opacity;
 	
+			// This blending makes use of some conditional statements that
+			// determine the final color of each pixel in each channel
 			fixed OverlayBlendMode(fixed basePixel, fixed blendPixel)
 			{
 				if (basePixel < 0.5)

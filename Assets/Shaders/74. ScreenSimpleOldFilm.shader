@@ -1,7 +1,7 @@
 ﻿Shader "Example/ScreenSimpleOldFilm" {
 
 	// Allows to simulate an old film effect including Sepia Tone effect, Vignette Effect and Dust and Scratches
-	// This shader must be used together with the OldFilmRenderImage script applied to the Camera
+	// This shader must be used together with the SimpleOldFilmRenderImage script applied to the Camera
 	// A few examples of this kind of effect: https://www.youtube.com/watch?v=Y0QOpCwKyGI and https://www.youtube.com/watch?v=hlIDspN0d34
 
 	Properties
@@ -37,9 +37,10 @@
 			fixed4 frag(v2f_img i) : SV_TARGET
 			{
 				// Fill pseudorandom numbers data
+				// TODO: this random value could have been passed directly from the SimpleOldFilmRenderImage script (updated every frame in the Update() like random=Random.Range(-1f,1f))
 				fixed3 noise = tex2D(_NoiseTex, i.uv);
 				float sinT = sin(_Time.x);
-				float rand = sin(sinT + noise.r);
+				float rand = sin(sinT + noise.r); 
 
 				// Get colors from the render and vignette textures and UVs from v2f_img struct
 				fixed3 renderTex = tex2D(_MainTex, i.uv).rgb;

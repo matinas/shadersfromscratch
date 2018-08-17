@@ -1,7 +1,7 @@
 ﻿Shader "Example/ScreenAdvancedOldFilm" {
 
 	// Allows to simulate an old film effect including Sepia Tone effect, Vignette Effect and Dust and Scratches
-	// This shader must be used together with the OldFilmRenderImage script applied to the Camera
+	// This shader must be used together with the AdvancedOldFilmRenderImage script applied to the Camera
 	// A few examples of this kind of effect: https://www.youtube.com/watch?v=Y0QOpCwKyGI and https://www.youtube.com/watch?v=hlIDspN0d34
 
 	Properties

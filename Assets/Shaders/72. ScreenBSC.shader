@@ -43,7 +43,7 @@
 
 				fixed3 intensity = float3(intensityF, intensityF, intensityF);
 
-				fixed3 satColor = lerp(intensity, brtColor, sat);		// Blend from the grayscale version of the brightness operation and the image with brightness applied
+				fixed3 satColor = lerp(intensity, brtColor, sat);		// Blend from the grayscale version of the image with brightness applied, and the image alone with brightness applied
 				fixed3 conColor = lerp(AvgLumin, satColor, con);		// Blend from the average luminance color and the actual color (already saturated and brightened)
 
 				return conColor;
